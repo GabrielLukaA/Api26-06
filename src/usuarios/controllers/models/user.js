@@ -32,6 +32,8 @@ Usuario.init({
 
 Usuario.sync().then(()=>{
     console.log("Usuário sincronizado")
+    console.log(Usuario)
+
 })
 .catch((e) =>{
 console.log("Usuário não sincronizado: ", e)
