@@ -24,10 +24,26 @@ Usuario.init({
         type: DataTypes.STRING,
         allowNull: false,
         unique: true
+    },
+    groups: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true
+    } ,
+    cardPermissions: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true
+    },
+    propertiesPermissions: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true
     }
+    
 },{
     sequelize: connection,
-    modelName: 'users'
+    modelName: 'usuarios'
 })
 
 Usuario.sync().then(()=>{
