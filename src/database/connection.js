@@ -14,8 +14,6 @@ async function testeDatabase() {
         console.log("Conexão falhou", error)
     }
 }
-
-
 testeDatabase().then();
 
 module.exports = sequelize;

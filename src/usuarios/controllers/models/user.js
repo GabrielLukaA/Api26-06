@@ -43,7 +43,7 @@ Usuario.init({
     
 },{
     sequelize: connection,
-    modelName: 'usersRetry'
+    modelName: 'usuarios'
 })
 
 Usuario.sync().then(()=>{
